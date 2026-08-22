@@ -1,1 +1,1 @@
-// Immediately Invoked Function Expressions (IIFEki)
+console.log("Result: ", result);

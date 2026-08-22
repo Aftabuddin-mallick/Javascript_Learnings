@@ -1,3 +1,3 @@
-const url = "https://hitesh.com/hitesh%20choudhary"
-console.log(url.replace('%20','-'));
-console.log(gameName.split('-'));
+const otherNumber = 231.8966
+
+console.log(otherNumber.toPrecision(3))
