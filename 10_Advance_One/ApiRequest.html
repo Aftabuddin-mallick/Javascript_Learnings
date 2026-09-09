@@ -9,18 +9,36 @@
   
 </body>
 <script>
-  const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', requestUrl);
-  xhr.onreadystatechange = function(){
-      console.log(xhr.readyState);
-      if (xhr.readyState === 4) {
-        const data = JSON.parse(this.responseText)
-        console.log(typeof data)
-        console.log(data.followers)
-      }
-  }
+ // 1. API URL
+const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
 
-  xhr.send();
+// 2. Create XMLHttpRequest object
+const xhr = new XMLHttpRequest();
+
+// 3. Prepare a GET request
+xhr.open('GET', requestUrl);
+
+// 4. This function runs whenever readyState changes
+xhr.onreadystatechange = function() {
+
+    // Print the current state
+    console.log(xhr.readyState);
+
+    // 5. If request is completed
+    if (xhr.readyState === 4) {
+
+        // 6. Convert JSON response into JS object
+        const data = JSON.parse(this.responseText);
+
+        // 7. Check data type
+        console.log(typeof data);
+
+        // 8. Print follower count
+        console.log(data.followers);
+    }
+}
+
+// 9. Send the request
+xhr.send();
 </script>
 </html>

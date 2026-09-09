@@ -37,7 +37,7 @@ promiseThree.then(function(user){
 
 const promiseFour = new Promise(function(resolve, reject){
   setTimeout(function(){
-    let error = false 
+    let error = false
     if (!error){
       resolve({username: "hitesh", password: "123"})
     } else{
@@ -59,7 +59,7 @@ promiseFour.then((user) => {
 
 const promiseFive = new Promise(function(resolve, reject){
   setTimeout(function(){
-    let error = true 
+    let error = false 
     if (!error){
       resolve({username: "javascript", password: "123"})
     } else{
@@ -80,16 +80,16 @@ try {
 consumePromiseFive()
 
 
-// async function getAllUsers(){
-//   try {
-//     const response = await fetch('https://jsonplaceholder.typicode.come/users')
-//     const data = await response.json()
-//     console.log(data)
-//   } catch (error) {
-//     console.log("E: ", error);
-//   }
-// }
-// getAllUsers()
+async function getAllUsers(){
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.come/users')
+    const data = await response.json()
+    console.log(data)
+  } catch (error) {
+    console.log("E: ", error);
+  }
+}
+getAllUsers()
 
 fetch("https://api.github.com/users/hiteshchoudhary")
 .then((response) => {
