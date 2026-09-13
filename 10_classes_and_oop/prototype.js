@@ -22,7 +22,7 @@ Object.prototype.hitesh = function(){
 Array.prototype.heyHitesh = function(){
   console.log(`hitesh says hello`)
 }
-// heroPower.hitesh()
+heroPower.hitesh()
 // myHeros.hitesh()
 // myHeros.heyHitesh()
 // heroPower.heyHitesh()

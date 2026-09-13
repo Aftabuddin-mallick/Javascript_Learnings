@@ -1,2 +1,1 @@
-myHeros.hitesh()
-// myHeros.heyHitesh()
+heroPower.hitesh()
