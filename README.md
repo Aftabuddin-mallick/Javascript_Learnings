@@ -22,7 +22,7 @@ The code is organized logically by topic and complexity to demonstrate consisten
 
 ## 📚 Credits & Learning Resources
 I believe in giving credit where it's due. My learnings are guided by excellent community resources, including:
-* [Channel Name / Playlist Title](Link to YouTube Playlist) – Excellent breakdown of core logic.
+* [Channel Name: Chai aur Code / Playlist Title : chai aur javascript ](Link to YouTube Playlist: https://youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&si=ynYOVTb-xiu3xjrK) – Excellent breakdown of core logic.
 * MDN Web Docs – Used daily for technical reference.
 
 ---
