@@ -3,7 +3,30 @@ class User {
     this.username = username;
   }
 
-  logMe()(
+  logMe(){
     console.log(`USERNAME is ${this.username}`);
-  )
+  }
 }
+
+class Teacher extends User{
+  constructor(username, email, password){
+    super(username);
+    this.email = email;
+    this.password = password;
+  }
+
+  addCourse(){
+    console.log(`A new course was added by ${this.username}`)
+  }
+}
+
+const chai = new Teacher("chai", "chai@email.com", "123");
+
+chai.addCourse();
+chai.logMe()
+
+const masalaChai = new User("Aftab");
+masalaChai.logMe()
+
+console.log(chai instanceof User);
+console.log(Teacher instanceof Teacher)

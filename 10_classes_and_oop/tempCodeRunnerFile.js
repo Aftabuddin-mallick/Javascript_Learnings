@@ -1,1 +1,1 @@
-heroPower.hitesh()
+console.log(hitesh.createId());
