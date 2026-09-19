@@ -11,6 +11,7 @@ let name = "Hitesh"
 let age = 18
 let isLoggedIn = false
 
+
 // number => 2 to power 32
 // bigint 
 // string => " "
