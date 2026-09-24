@@ -1,6 +1,6 @@
 const descriptor = Object.getOwnPropertyDescriptor(Math, "PI")
 
-// console.log(descriptor);
+console.log(descriptor);
 
 // console.log(Math.PI)
 // Math.PI = 5;
